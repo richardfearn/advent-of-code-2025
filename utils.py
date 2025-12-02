@@ -33,5 +33,11 @@ def group_lines(lines):
     return groups
 
 
+def join_lines(text):
+    lines = text.split("\n")
+    lines = [line.strip() for line in lines]
+    return "".join(lines)
+
+
 def to_lines(text):
     return text.strip("\n").split("\n")
