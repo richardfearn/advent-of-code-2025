@@ -4,7 +4,7 @@ from pathlib import Path
 def read_input_lines(day):
     with day_path(day).open() as file:
         lines = file.readlines()
-    lines = [line.rstrip() for line in lines]
+    lines = [line.rstrip("\n") for line in lines]
     return lines
 
 
